@@ -6,7 +6,7 @@ https://ccom.ucsd.edu/~acloninger/170A_F19/Math170A_homework.html
 
 The directory test2 --> test2 --> spiders contains the 'spider2' file.
 
-Usage:
+---Usage---
 
 run 'scrapy crawl spider2' and let the spider run on the website. 
 
@@ -18,3 +18,7 @@ My crawler goes through each homework assignment on the link and returns:
   4. The assignment's solution link(s)
  
 My crawler saves all of this data in the saved_data.csv file in the main directory. 
+
+---Technique---
+
+I used scrapy's libraries to make a spider class in 'spider2.py'. I then used xpath to extract the location of each value I found above. I then wrote the values to a csv file using python's csv library. 
